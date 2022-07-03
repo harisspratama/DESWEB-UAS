@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RS. ALCAPONE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container-content">
+
+        <!-- Header -->
+        <header
+            class="header fixed-top d-flex justify-content-center align-items-center flex-column bg-white shadow shadow-lg">
+            <img src="assets/img/logo.png" alt="Logo" class="logo">
+            <h1 class="fs-1 fw-bolder">RS. ALCAPONE</h1>
+            <h6 class="text-center">Memberikan pelayanan terbaik untuk kepuasan pasien</h5>
+                <nav class="navbar navbar-expand-lg bg-danger w-100 navbar-dark mt-4">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="index.html">BERANDA</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="tentang.html">TENTANG KAMI</a>
+                            </li>
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    JENIS LAYANAN
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="rawatJalan.html">RAWAT JALAN</a></li>
+                                    <li><a class="dropdown-item" href="rawatInap.html">RAWAT INAP</a></li>
+                                    <li><a class="dropdown-item" href="darurat.html">DARURAT</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="dokter.html">DOKTER SPESIALIS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Content -->
+            <div class="container p-5">
+                <div class="row gy-4">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="content p-4 bg-white">
+                            <h2 class="text-center fw-bolder">Formulir <br> Pembuatan Janji Pelayanan</h2>
+                            <form action="hasilJanji.html" method="get">
+                                <div class="mb-3">
+                                    <label for="fname" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="fname" name="fname" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="jkel" class="form-label">Jenis Kelamin</label>
+                                    <select id="jkel" class="form-select" name="jkel">
+                                        <option value="Laki-laki">Laki-laki</option>
+                                        <option value="Perempuan">Perempuan</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tglLahir" class="form-label">Tanggal Lahir</label>
+                                    <input type="date" class="form-control" id="tglLahir" name="tglLahir" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telepon</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="jPel" class="form-label">Jenis Pelayanan</label>
+                                    <select id="jPel" name="jPel" class="form-select">
+                                        <option value="Rawat Jalan">Rawat Jalan</option>
+                                        <option value="Rawat Inap">Rawat Inap</option>
+                                        <option value="Darurat">Darurat</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="JanjiMingguan" class="form-label">Janji pada minggu ke- :</label>
+                                    <input type="date" class="form-control" id="JanjiMingguan" name="JanjiMingguan"
+                                        required>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="reset" class="btn btn-danger w-25" value="reset">Reset</button>
+                                    <button type="submit" class="btn btn-success w-25 ms-xs-0 ms-sm-2" id="submitForm"
+                                        value="Submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row gy-4 px-3">
+                            <div class="col-12 bg-white p-4 hover">
+                                <a href="#" class="text-danger fw-bold">Buat Janji</a>
+                                <p class="mt-2">
+                                    Silahkan buat janji kepada dokter untuk pelayanan
+                                </p>
+                            </div>
+                            <div class="col-12 bg-white p-4 hover">
+                                <a href="harga.html" class="text-danger fw-bold">Harga Pelayanan</a>
+                                <p class="mt-2">
+                                    Berikut informasi harga pelayanan yang harus dibayar pasien.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center p-4 bg-danger text-light">
+            <h6>copyright &copy; Kelompok G - Desain Web</h6>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

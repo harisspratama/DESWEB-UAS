@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+}
+
+.main {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/rumahSakit.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 250px;
+}
+
+.li-none {
+    list-style: none;
+    margin: 0 0 0 110px;
+}
+
+.hover:hover {
+    box-shadow: 0 2px red;
+}
+
+p {
+    text-align: justify;
+}
+
+.h-75 {
+    height: 50vh !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background: rgb(209, 73, 73);
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.hero-bg-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/rumahSakit.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 74vh;
+    position: relative;
+    margin-top: 250px;
+}
+
+.hero-bg-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/hospital.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 74vh;
+    position: relative;
+    margin-top: 250px;
+}
+
+.fs-10 {
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.hover-card .card:hover {
+    background: #DC3545;
+    transition: .5s all;
+    color: #FFF;
+    transform: translateY(-10px);
+}
+
+.hover-card .card:hover img {
+    filter: invert(1);
+}
+
+.text-none {
+    text-decoration: none;
+    color: #151515;
+}
+
+@media screen and (max-width: 768px) {
+    .fs-10 {
+        font-size: 45px;
+        font-weight: 900;
+    }
+}
